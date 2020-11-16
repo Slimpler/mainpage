@@ -3,11 +3,12 @@ import { Container, Divider, Header, Image } from 'semantic-ui-react';
 import {Listado} from './Listado';
 import {ComponenteMenu} from './ComponenteMenu';
 import Validador from './ComponentesValidador/Validador';
+import { Formulario } from './Formulario';
 
 function App() {
   return (
     <div className="App">
-    <Header as='h2' icon textAlign='center'>     
+      <Header as='h2' icon textAlign='center'>     
       <h1>Semantic UI</h1>
         <Image
           centered
@@ -17,13 +18,17 @@ function App() {
       <h3>Para la clase de Desarrollo Web</h3>
     </Header>
     <Divider/>
-    <ComponenteMenu/>
+      <ComponenteMenu/>
     <Divider/>
-    <Listado/>
+      <Listado/>
     <Divider/>
-    <Container textAlign="center">
-          <Validador valor=""/>
-    </Container>
+      <Container textAlign="center">
+            <Validador valor=""/>
+      </Container>
+    <Divider/>
+      <Container>
+          <Formulario />
+      </Container>
 
     </div>
   );

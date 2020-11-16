@@ -10,6 +10,7 @@ export class ComponenteMenu extends Component {
     const { activeItem } = this.state
 
     return (
+      
       <Container textAlign="center">
         <Menu >
           <Menu.Item
@@ -27,9 +28,9 @@ export class ComponenteMenu extends Component {
           />
 
           <Menu.Item
-            name='Otro'
-            active={activeItem === 'Otro'}
-            content='Otro'
+            name='Formulario'
+            active={activeItem === 'Formulario'}
+            content='Formulario'
             onClick={this.handleItemClick}
           />
         </Menu>

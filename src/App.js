@@ -22,10 +22,8 @@ function App() {
     <Listado/>
     <Divider/>
     <Container textAlign="center">
-          <Validador valor=""/><p>Clave 'uvalpo'</p>
+          <Validador valor=""/>
     </Container>
-
-
 
     </div>
   );

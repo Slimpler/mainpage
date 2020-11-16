@@ -22,12 +22,14 @@ export default function Validador(params) {
              <h1>Bienvenido</h1>
              <h3> --Este es un validador de rut-- </h3>
 
-        <input type="text" value={rutIngresado} onChange={change}  />
-                 <p>Ingrese su rut sin puntos ni guion</p>
-       { validate(rutIngresado) && 
-           <input type="password"  value={clave} onChange={onChangePassword}  />
-           
-       } 
+             <input type="text" value={rutIngresado} onChange={change} />
+             <p>Ingrese su rut sin puntos ni guion</p>
+             
+             {validate(rutIngresado) &&
+                 <input type="password" value={clave} onChange={onChangePassword} />
+
+             } 
+       <p>Clave 'uvalpo'</p>
        </Container>
        </div>)
 }

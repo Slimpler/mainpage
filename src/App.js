@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Container, Divider, Header, Image } from 'semantic-ui-react';
+import {Listado} from './Listado';
+import {ComponenteMenu} from './ComponenteMenu';
+import Validador from './ComponentesValidador/Validador';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header as='h2' icon textAlign='center'>     
+      <h1>Semantic UI</h1>
+        <Image
+          centered
+          size='large'
+          src='https://miro.medium.com/max/256/0*90ubl17sSaFcwNRu.png'
+        />
+      <h3>Para la clase de Desarrollo Web</h3>
+    </Header>
+    <Divider/>
+    <ComponenteMenu/>
+    <Divider/>
+    <Listado/>
+    <Divider/>
+    <Container textAlign="center">
+          <Validador valor=""/><p>Clave 'uvalpo'</p>
+    </Container>
+
+
+
     </div>
   );
 }

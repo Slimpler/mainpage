@@ -12,7 +12,7 @@ function Nav() {
             <ul className="nav-links">
                 <Link style={navStyle} to='/'>
                     <li>
-                        Home
+                        Principal
                     </li>
 
                 </Link>

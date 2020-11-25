@@ -1,21 +1,23 @@
 
 import { Container, Divider, Header, Image , Segment, Message} from 'semantic-ui-react';
-import {Listado} from './Listado';
-import {ComponenteMenu} from './ComponenteMenu';
-import Validador from './ComponentesValidador/Validador';
-import { Formulario } from './Formulario';
 
-import logo from './logo.svg';
+//Componentes a utilizar
+import {Listado} from './components/Listado';
+import {ComponenteMenu} from './components/menu/ComponenteMenu';
+import Validador from './components/componentesValidador/Validador';
+import {Formulario} from './components/Formulario';
+import {Principal} from './components/menu/Principal'
+
 import Nav from './Nav';
-import Boton from './Boton';
+import Boton from './components/Boton';
 
 //Seccion de router
-import {BrowserRouter as 
+import {
+  BrowserRouter as 
   Router, 
   Switch, 
-  Route } from 'react-router-dom';
-
-
+  Route 
+} from 'react-router-dom';
 
 function App() {
   return (
@@ -24,13 +26,13 @@ function App() {
 
       <div className="App">
           <Header as='h2' icon textAlign='center'>
-            <h1>Semantic UI</h1>
+            <h1>Universidad de Valparaíso</h1>
             <Image
               centered
               size='large'
-              src='https://miro.medium.com/max/256/0*90ubl17sSaFcwNRu.png'
+              src='https://www.pngfind.com/pngs/m/396-3962285_png-transparent-images-pluspng-imagenes-de-lobos-de.png'
             />
-            <h3>Para la clase de Desarrollo Web</h3>
+            <h1>Nicolás Delgado Oyarce</h1>
             <div className="App-header1">
               <Boton/>
             </div>
@@ -53,56 +55,10 @@ function App() {
             </div>
           </segment>
         </body>
-
-
       </div>      
       </Segment>
     </Router>
 
   );
 }
-
-
-const Principal = () => (
-  
-  <Segment>
-    
-    <div>
-      <div>
-        <h1>Pagina Principal</h1>
-      </div>
-      <div>
-        <h2>Bienvenidos</h2>
-
-      </div>
-    </div>
-    <Divider section />
-    <>
-      <Message compact>
-        <Message.Header>Información de Semantic UI</Message.Header>
-        <p>
-          Semantic UI es un framework para crear el diseño de interfaces de manera responsive utilizando HTML/CSS legible.
-        </p>
-        <p>
-          Empezó su andadura en 2013 y actualmente va por la versión 2.2.  Viene integrado con otros frameworks o librerías como son Angular, React, Ember o Meteor.
-        </p>
-      </Message>
-      <Divider section />
-      <Message compact>
-        <Message.Header>Utiliza cinco categorías descriptivas para definir los componentes:</Message.Header>
-        <Message.List>
-          <Message.Item>UI Element: un bloque de construcción básico. Puede aparecer solo o en grupo. Por ejemplo, un botón puede ser independiente o puede estar dentro de un grupo de botones.</Message.Item>
-          <Message.Item>UI Collection: es un grupo de diferentes tipos de elementos que son inter-dependientes. Por ejemplo, un formulario web puede tener botones, inputs, checkboxes, iconos etc.</Message.Item>
-          <Message.Item>UI View: representa una pieza común de contenido del sitio web. Por ejemplo, una sección de feeds o comentarios.</Message.Item>
-          <Message.Item>UI Module: es un componente con funcionalidad interactiva basada en JavaScript, como son los accodions, modales etc.</Message.Item>
-          <Message.Item>UI Behaviour: es un componente que no puede existir de forma independiente, sino que se utiliza para inyectar funcionalidad en otros componentes.</Message.Item>
-        </Message.List>
-      </Message>
-
-    </>
-    <Divider section />
-    <img src={logo} className="App-logo" alt="logo" />
-  </Segment>
-  
-)
 export default App;

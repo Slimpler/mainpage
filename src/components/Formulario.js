@@ -22,7 +22,7 @@ export class Formulario extends Component {
     return (
      
       <Form> 
-        <h1>--Este es un formulario de registro--</h1>
+        <h1>Formulario de registro</h1>
         <Form.Group widths='equal'>
           <Form.Input fluid label='Nombre' placeholder='Nombre' />
           <Form.Input fluid label='Apellidos' placeholder='Apellidos' />
@@ -34,8 +34,8 @@ export class Formulario extends Component {
 
         </Form.Group>
         
-        <Form.TextArea label='Información sobre Ud.' placeholder='Cuente sobre ud...' />
-        <Form.Checkbox label='Estoy de acuerdo con los terminos y condiciones' />
+        <Form.TextArea label='Información extra' placeholder='' />
+        <Form.Checkbox label='Estoy de acuerdo con los términos y condiciones' />
 
 
         <Form.Button onClick = {this.show}>Enviar</Form.Button>
@@ -45,9 +45,6 @@ export class Formulario extends Component {
           onConfirm={this.handleConfirm}  
                   
         />
-        <p>
-          Resultado: <em>{resultado}</em>
-        </p>
 
       </Form>
     )

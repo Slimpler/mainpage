@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Container, Menu, Message, Segment } from 'semantic-ui-react'
+import { Dropdown, Container,Menu, Message, Segment } from 'semantic-ui-react'
 
 export class ComponenteMenu extends Component {
   state = {}
@@ -15,7 +15,7 @@ export class ComponenteMenu extends Component {
         <Segment>
           <Container textAlign="center">
             <Menu compact>
-              <Link to='/Listado'>
+              <Link to='/HELLO'>
                 <Menu.Item
                   name='Listado Curso'
                   active={activeItem === 'Listado Curso'}
@@ -44,10 +44,10 @@ export class ComponenteMenu extends Component {
           </Container>
         </Segment>
         <Segment>
-          Insertar un video de semantic ui
+          
         </Segment>  
       </Segment>
 
-    )
+    );
   }
 }
